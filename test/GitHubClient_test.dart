@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:test/test.dart';
 
-import '../lib/Model/GitHubClient.dart';
-import '../lib/Model/GitHubRepository.dart';
+import '../lib/Entity/GitHubClient.dart';
+import '../lib/API/GitHubRepository.dart';
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 

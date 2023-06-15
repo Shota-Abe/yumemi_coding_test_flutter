@@ -47,8 +47,7 @@ final class GitHubRepositoriesScreen extends ConsumerWidget {
                   return Column(
                     children: [
                       ListTile(
-                        title: Text(repository.name),
-                        subtitle: Text(repository.description),
+                        title: Text(repository.name, style: const TextStyle(fontSize: 18)),
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
