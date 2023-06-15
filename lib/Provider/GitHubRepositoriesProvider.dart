@@ -4,8 +4,8 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../API/GitHubRepository.dart';
-import '../Entity/GitHubClient.dart';
+import '../Entity/GitHubRepository.dart';
+import '../API/GitHubClient.dart';
 
 final class GitHubRepositoriesState {
   final List<GitHubRepository> repositories;

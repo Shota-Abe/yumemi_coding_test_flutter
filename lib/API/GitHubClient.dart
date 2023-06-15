@@ -3,7 +3,7 @@
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 
-import '../API/GitHubRepository.dart';
+import '../Entity/GitHubRepository.dart';
 
 class GitHubClient {
   final String baseUrl = 'api.github.com';

@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../../API/GitHubRepository.dart';
+import '../../Entity/GitHubRepository.dart';
 
 class GitHubRepositoryDetailScreen extends StatelessWidget {
   const GitHubRepositoryDetailScreen({
