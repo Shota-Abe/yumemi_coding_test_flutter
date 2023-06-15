@@ -33,6 +33,13 @@ final class GitHubRepositoriesState {
 
 final class GitHubRepositoriesProvider extends StateNotifier<GitHubRepositoriesState> {
   GitHubRepositoriesProvider() : super(GitHubRepositoriesState(repositories: [], query: '', isLoading: false));
+
+  @override
+  void dispose() {
+    _debounceTimer?.cancel();
+    super.dispose();
+  }
+
   final client = GitHubClient(httpClient: http.Client());
   final debounceDuration = const Duration(milliseconds: 1000);
   Timer? _debounceTimer;
